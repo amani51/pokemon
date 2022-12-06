@@ -26,4 +26,4 @@
 #### Tests
 - No test for this lab 
 #### Pull Requests
-- [PULL REQUEST LINK](https://github.com/amani51/snacks_crud/pull/1)
+- [PULL REQUEST LINK](https://github.com/amani51/pokemon/pull/1)
