@@ -1,0 +1,23 @@
+{% extends '_base.html' %}
+
+{% block title %}Pokemons Card{% endblock title %}
+{% block content %}
+<h1>  Pokemons Card</h1>
+
+{% for pokemon in object_list %}
+<div class="card" id="project-3" >
+        <h3>{{pokemon.pokemon}}</h3>
+        <a href="{% url 'pokemon_detail' pokemon.id%}">Detail</a>
+        <a href="{% url 'pokemon_update' pokemon.id%}" id="update_list">Change</a>
+        <a href="{% url 'pokemon_delete' pokemon.id%}" id="delete_list">Remove</a>
+      </div>
+    
+{% endfor%}
+<div class="card" id="project-3">
+<a href="{% url 'pokemon_create'%}">Add Pokemon</a>
+</div>
+{% endblock content %}
+
+
+
+

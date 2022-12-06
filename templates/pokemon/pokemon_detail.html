@@ -1,0 +1,21 @@
+{% extends "_base.html" %}
+
+{% block title %}Pokemon Detail{% endblock title %}
+
+{% block content %}
+
+<div class="card-container">
+ 
+<div class="card">
+    <img src="{{pokemon.img_url}}" alt="{{pokemon.pokemon}}" width="200px" />
+    <div class="content">
+    <h3>{{pokemon.pokemon}}</h3>
+    <h4>type: {{pokemon.pokemon_type}}</h4>
+    <h4>Owner: {{pokemon.owner.username}}</h4>
+    <p>Description: {{pokemon.description}}</p>
+    </div>
+</div>
+{% endblock content %}
+
+
+
